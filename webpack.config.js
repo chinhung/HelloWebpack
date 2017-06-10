@@ -1,12 +1,13 @@
 var path = require('path');
 
 module.exports = {
-    entry: [
-       'webpack-dev-server/client?http://localhost:8080',
-       './app/index.js'
-    ],
+    entry: {
+        server: 'webpack-dev-server/client?http://localhost:8080',
+        main: './app/index.js',
+        vendor: 'moment'
+    },
     output: {
-        filename: 'bundle.js',
+        filename: '[name].js',
         path: path.resolve(__dirname, 'dist')
     }
 };
