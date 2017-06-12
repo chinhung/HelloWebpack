@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         server: 'webpack-dev-server/client?http://localhost:8080',
         main: './app/index.js',
-        vendor: 'moment'
+        vendor: ['moment', 'angular', 'angular-ui-router']
     },
     output: {
         filename: '[name].js',

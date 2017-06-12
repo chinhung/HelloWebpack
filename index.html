@@ -1,10 +1,17 @@
 <!doctype html>
-<html>
+<html ng-app="app">
     <head>
         <meta charset="UTF-8">
         <title>HelloWebpack</title>
+        <base href="/">
     </head>
     <body>
+        <div>
+            <a ui-sref="root">root</a>
+            <a ui-sref="page1">page1</a>
+            <a ui-sref="page2">page2</a>
+        </div>
+        <div ui-view></div>
         <script src="dist/vendor.js"></script>
         <script src="dist/main.js"></script>
     </body>
