@@ -6,7 +6,7 @@ export default function routing($stateProvider, $urlRouterProvider, $locationPro
   $stateProvider
     .state('root', {
         url: '/',
-        template: '<div>root</div>'
+        templateUrl: './app/root/root.component.html'
     })
     .state('page1', {
         url: '/page1',
