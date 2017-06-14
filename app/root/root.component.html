@@ -2,7 +2,11 @@
     <div>{{vm.name}}</div>
     <div>{{vm.value1}}</div>
     <div>{{vm.value2}}</div>
+    <div>{{vm.obj1}}</div>
     <button ng-click="vm.changeToWord()">vm.changeToWord()</button>
     <button ng-click="vm.changeToNumber()">vm.changeToNumber()</button>
+    <button ng-click="vm.toggleObj1()">vm.toggleObj1()</button>
+    <button ng-click="vm.toggleObj1Name()">vm.toggleObj1Name()</button>
+    <button ng-click="vm.toggleObj1Age()">vm.toggleObj1Age()</button>
 </div>
-<root-sub-component one-way="vm.value1" two-way="vm.value2"></root-sub-component>
+<root-sub-component one-way="vm.value1" two-way="vm.value2" one-way-obj="vm.obj1"></root-sub-component>
