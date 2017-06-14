@@ -7,7 +7,7 @@ var rootComponent = {
 RootComponentController.$inject = [];
 function RootComponentController() {
     const self = this;
-    self.name = 'rootComponentController';
+    self.name = 'RootComponentController';
     self.value1 = 1;
     self.value2 = 2;
     self.changeToWord = changeToWord;
