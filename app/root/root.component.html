@@ -1,2 +1,8 @@
-<div style="border:1px solid red; margin:0.5em; padding: 0.5em;">{{vm.name}}</div>
+<div style="border:1px solid red; margin:0.5em; padding: 0.5em;">
+    <div>{{vm.name}}</div>
+    <div>{{vm.value1}}</div>
+    <div>{{vm.value2}}</div>
+    <button ng-click="vm.changeToWord()">vm.changeToWord()</button>
+    <button ng-click="vm.changeToNumber()">vm.changeToNumber()</button>
+</div>
 <root-sub-component one-way="vm.value1" two-way="vm.value2"></root-sub-component>
