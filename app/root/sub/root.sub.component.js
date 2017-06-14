@@ -1,4 +1,8 @@
 var rootSubComponent = {
+    bindings: {
+        oneWay: '<',
+        twoWay: '='
+    },
     templateUrl: './app/root/sub/root.sub.component.html',
     controller: RootSubComponentController,
     controllerAs: 'vm'
