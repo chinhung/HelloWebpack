@@ -8,12 +8,12 @@ export default function routing($stateProvider, $urlRouterProvider, $locationPro
         url: '/',
         template: '<root-component></root-component>'
     })
-    .state('page1', {
-        url: '/page1',
-        template: '<div>page1</div>'
+    .state('person', {
+        url: '/person',
+        template: '<person-component></person-component>'
     })
-    .state('page2', {
-        url: '/page2',
-        template: '<div>page2</div>'
+    .state('book', {
+        url: '/book',
+        template: '<book-component></book-component>'
     });
 };
